@@ -83,8 +83,9 @@ export const query = graphql`
 
 const ProjectTemplate = props => {
   const { data, errors } = props
-  console.log(data)
+
   const project = data && data.project
+
   return (
     <Layout>
       {errors && <SEO title='GraphQL Error' />}
