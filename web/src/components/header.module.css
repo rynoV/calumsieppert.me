@@ -48,7 +48,7 @@
 
   & svg {
     display: block;
-    fill: inherit;
+    fill: context-fill;
   }
 
   @media (--media-min-small) {

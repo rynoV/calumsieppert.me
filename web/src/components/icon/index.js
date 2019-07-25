@@ -1,12 +1,11 @@
 import React from 'react'
 import HamburgerIcon from './hamburger'
 
-function Icon (props) {
-  switch (props.symbol) {
-    case 'hamburger':
-      return <HamburgerIcon />
-    default:
-      return <span>Unknown icon: {props.symbol}</span>
+function Icon(props) {
+  if (props.symbol === 'hamburger') {
+    return <HamburgerIcon />
+  } else {
+    return <span>Unknown icon: {props.symbol}</span>
   }
 }
 
